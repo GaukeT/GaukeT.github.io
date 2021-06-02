@@ -1,6 +1,10 @@
 body, html {
   height: 100%;
   margin: 0;
+
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
+  color: white;
 }
 
 .bgimg {
@@ -9,32 +13,61 @@ body, html {
   background-position: center;
   background-size: cover;
   position: relative;
-  color: white;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 25px;
 }
 
 .topleft {
   position: absolute;
   top: 0;
-  left: 16px;
 }
 
-.bottomleft {
+.topleft p {
+  margin: 15px;
+}
+
+.topright {
   position: absolute;
-  bottom: 0;
-  left: 16px;
+  top: 0;
+  right: 15px;
 }
 
-.middle {
+.topright p {
+  margin: 15px;
+  display: inline-block;
+}
+
+.left {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 25%;
   transform: translate(-50%, -50%);
   text-align: center;
 }
 
-hr {
+.left h1 {
+  margin-bottom: 15px;
+}
+
+.left p {
+  margin-top: 15px;
+}
+
+.left hr {
   margin: auto;
-  width: 40%;
+  width: 75%;
+}
+
+.bottomright {
+  position: absolute;
+  bottom: 5px;
+  right: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  transition: 0.2s;
+}
+
+a:hover {
+  opacity: 50%;
 }
