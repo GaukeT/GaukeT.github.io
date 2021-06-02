@@ -36,8 +36,26 @@ body, html {
   display: inline-block;
 }
 
-.topright .fa {
+.topright .small {
   display: none;
+}
+
+.topright .small .menu-items {
+  display: none;
+  position: absolute;
+  right: 0px;
+  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.topright .small:hover .menu-items {
+  display: block;
+}
+
+.topright .small .menu-items p {
+  margin: 5px;
 }
 
 .left {
@@ -112,9 +130,9 @@ a:hover {
     display: none;
   }
 
-  .topright .fa {
-    margin: 15px;
+  .topright .small {
     display: inline-block;
+    margin: 15px;
   }
 }
 
