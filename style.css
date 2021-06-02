@@ -125,7 +125,7 @@ a:hover {
   }
 }
 
-/* @media on width */
+/* @media on height */
 @media only screen and (max-height: 500px) {
   .left {
     top: 25%;
