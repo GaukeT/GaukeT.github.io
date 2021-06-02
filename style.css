@@ -5,6 +5,7 @@ body, html {
   font-family: "Courier New", Courier, monospace;
   font-size: 25px;
   color: white;
+  box-sizing: border-box;
 }
 
 .bgimg {
@@ -36,10 +37,13 @@ body, html {
 }
 
 .left {
-  position: absolute;
-  top: 50%;
+/*
   left: 25%;
   transform: translate(-50%, -50%);
+*/
+  position: absolute;
+  top: 40%;
+  width: 50%;
   text-align: center;
 }
 
@@ -53,7 +57,7 @@ body, html {
 
 .left hr {
   margin: auto;
-  width: 75%;
+  width: 300px;
 }
 
 .bottomright {
@@ -70,4 +74,28 @@ a {
 
 a:hover {
   opacity: 50%;
+}
+
+@media only screen and (max-width: 1000px) {
+  .left {
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .left {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .left {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .left hr {
+    width: 75%;
+  }
 }
