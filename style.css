@@ -5,7 +5,6 @@ body, html {
   font-family: "Courier New", Courier, monospace;
   font-size: 25px;
   color: white;
-  box-sizing: border-box;
 }
 
 .bgimg {
@@ -42,8 +41,8 @@ body, html {
 }
 
 .left {
-  position: relative;
-  top: 40%;
+  position: absolute;
+  bottom: 40%;
   width: 50%;
   text-align: center;
 }
