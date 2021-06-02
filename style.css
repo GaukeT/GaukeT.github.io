@@ -42,7 +42,7 @@ body, html {
 }
 
 .left {
-  position: absolute;
+  position: relative;
   top: 40%;
   width: 50%;
   text-align: center;
@@ -122,12 +122,5 @@ a:hover {
 @media only screen and (max-width: 400px) {
   .left hr {
     width: 75%;
-  }
-}
-
-/* @media on height */
-@media only screen and (max-height: 900px) {
-  .left {
-    top: 25%;
   }
 }
