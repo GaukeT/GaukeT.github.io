@@ -32,15 +32,16 @@ body, html {
 }
 
 .topright p {
-  margin: 15px;
+  margin-top: 15px;
+  margin-left: 15px;
   display: inline-block;
 }
 
+.topright .fa {
+  display: none;
+}
+
 .left {
-/*
-  left: 25%;
-  transform: translate(-50%, -50%);
-*/
   position: absolute;
   top: 40%;
   width: 50%;
@@ -76,21 +77,26 @@ a:hover {
   opacity: 50%;
 }
 
-@media only screen and (max-width: 1000px) {
-  .left {
-    width: 75%;
-  }
-}
-
-@media only screen and (max-width: 800px) {
-  .left {
-    width: 90%;
-  }
-}
-
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
   .left {
     width: 100%;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .topright p {
+    margin-left: 0px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .topright .wide {
+    display: none;
+  }
+
+  .topright .fa {
+    margin: 15px;
+    display: inline-block;
   }
 }
 
@@ -99,3 +105,4 @@ a:hover {
     width: 75%;
   }
 }
+
