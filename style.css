@@ -78,24 +78,6 @@ body, html {
   width: 300px;
 }
 
-.bottomleft {
-  position: absolute;
-  bottom: 5px;
-}
-
-.bottomleft img {
-  display: inline-block;
-  width: 75px;
-  height: 75px;
-}
-
-.bottomleft p {
-  font-size: 10px;
-  display: inline-block;
-  inline-size: 150px;
-  overflow-wrap: break-word;
-}
-
 .bottomright {
   position: absolute;
   bottom: 5px;
