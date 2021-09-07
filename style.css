@@ -59,8 +59,11 @@ body, html {
 }
 
 .left {
+  margin: 0;
   position: absolute;
-  bottom: 40%;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
   width: 50%;
   text-align: center;
 }
@@ -78,6 +81,14 @@ body, html {
   width: 300px;
 }
 
+.left form {
+  margin-top: 15px;
+}
+
+.left form div {
+  margin-top 15px;
+}
+
 .bottomright {
   position: absolute;
   bottom: 5px;
@@ -92,6 +103,28 @@ a {
 
 a:hover {
   opacity: 50%;
+}
+
+ul {
+  padding-left: 0px;
+  list-style-type: none;
+}
+
+li {
+  cursor: pointer;
+}
+
+input[type=submit] {
+  padding: 10px 15px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 5px;
+  transition-duration: 0.4s;
+}
+
+input[type=submit]:hover {
+  background-color: #999;
+  color: white;
 }
 
 /* @media on max width */
