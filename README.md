@@ -1,8 +1,8 @@
 # GaukeT.github.io
-  [Portfolio](https://gauket.github.io/)
+  ### [Portfolio](https://gauket.github.io/)
 
 
-### sub-pages
+#### sub-pages
   - sudoku-solver-js -> [gh-pages](https://gauket.github.io/sudoku-solver-js/)
   - nonogram-js -> [gh-pages](https://gauket.github.io/nonogram-js/)
   - sorting-visualization -> [gh-pages](https://gauket.github.io/sorting-visualization/)
