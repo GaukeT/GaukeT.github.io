@@ -3,6 +3,7 @@
 
 
 #### sub-pages
+  - list-of-things -> [gh-pages](https://gauket.github.io/list-of-things/) 
   - sudoku-solver-js -> [gh-pages](https://gauket.github.io/sudoku-solver-js/)
   - nonogram-js -> [gh-pages](https://gauket.github.io/nonogram-js/)
   - sorting-visualization -> [gh-pages](https://gauket.github.io/sorting-visualization/)
