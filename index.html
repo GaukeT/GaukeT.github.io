@@ -33,24 +33,35 @@
     </div>
   </header>
   <body>
+    <div id="preloader"></div>
+
     <div id="content">
       <div class="left">
         <h1>Gauke Teijema</h1>
         <hr>
         <p>Software developer</p>
       </div>
+	  
     </div>
+    
+    <script>
+      var loader = document.getElementById('preloader');
+      window.addEventListener('load', function() {
+        loader.style.display = 'none';
+      });
+    </script>
   </body>
   <footer>
-    <div class="bottomright">
+  <div class="bottomright">
       <a rel="noopener" href="https://github.com/GaukeT" target="_blank" title="GitHub">
         <i class="fa fa-github" aria-hidden="true"></i>
       </a>
       <a rel="noopener" href="https://nl.linkedin.com/in/gauketeijema" target="_blank" title="LinkedIn">
         <i class="fa fa-linkedin" aria-hidden="true"></i>
       </a>
-      <a href="mailto:gauket.dev@gmail.com?subject=github.io" title="Mail">
-        <i class="fa fa-envelope" aria-hidden="true"></i>
+  
+      <a rel="noopener" href="mailto://gauket.dev@gmail.com?subject=github-pages" target="_top"  title="Mail">
+        <i class="fa fa-envelope"></i>
       </a>
     </div>
   </footer>
