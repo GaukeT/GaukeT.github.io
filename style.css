@@ -3,9 +3,6 @@ html {
   font-size: 25px;
   color: white;
   height: 100%;
-}
-
-.bgimg {
   background-color: #1A4341;
   background-image: url('img/background.jpg');
   background-repeat: no-repeat;
