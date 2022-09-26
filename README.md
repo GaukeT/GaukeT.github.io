@@ -1,8 +1,7 @@
 # GaukeT.github.io
   ### -> [Portfolio](https://gauket.github.io/)
 
-
-#### sub-pages
+## sub-pages
   - list-of-things -> [gh-pages](https://gauket.github.io/list-of-things/) 
   - tea-topics -> [gh-pages](https://gauket.github.io/tea-topics/)
   - sudoku-solver-js -> [gh-pages](https://gauket.github.io/sudoku-solver-js/)
@@ -11,4 +10,9 @@
   - flocking-simulation -> [gh-pages](https://gauket.github.io/flocking-simulation/)
   - seven-segment-clock -> [gh-pages](https://gauket.github.io/seven-segment-clock/)
   - traffic -> [gh-pages](https://gauket.github.io/traffic/)
-  
+
+### deploy
+```
+ng deploy --base-href=/
+```
+*This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.5.*
