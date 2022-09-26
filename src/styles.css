@@ -16,7 +16,8 @@ html, body {
 
 .navbar {
     display: flex;
-    /* background-color: blue; */
+    justify-content: space-between;
+    /* background-color: brown; */
     margin: 1rem;
 }
 

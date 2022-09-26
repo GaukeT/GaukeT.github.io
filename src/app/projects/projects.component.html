@@ -1,0 +1,18 @@
+<table>
+    <tr>
+        <th>Project</th>
+        <th>Github</th>
+        <th>Demo</th>
+    </tr>
+    <tr *ngFor="let proj of projects">
+        <td>{{ proj.name }}</td>
+        <td><a rel="noopener" href="https://github.com/GaukeT/{{ proj.github }}/" title="{{ proj.github }}">
+            <i class="fa fa-link"></i>
+        </a></td>
+        <td><a rel="noopener" href="https://gauket.github.io/{{ proj.github }}/" title="{{ proj.github }}">
+            <i class="fa fa-link"></i>
+        </a></td>
+    </tr>
+</table>
+
+

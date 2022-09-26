@@ -2,7 +2,6 @@
   ### -> [Portfolio](https://gauket.github.io/)
 
 ## sub-pages
-  - list-of-things -> [gh-pages](https://gauket.github.io/list-of-things/) 
   - tea-topics -> [gh-pages](https://gauket.github.io/tea-topics/)
   - sudoku-solver-js -> [gh-pages](https://gauket.github.io/sudoku-solver-js/)
   - nonogram-js -> [gh-pages](https://gauket.github.io/nonogram-js/)
