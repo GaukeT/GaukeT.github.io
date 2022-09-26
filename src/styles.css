@@ -17,13 +17,11 @@ html, body {
 .navbar {
     display: flex;
     justify-content: space-between;
-    /* background-color: brown; */
     margin: 1rem;
 }
 
 .content {
     display: flex;
-    /* background-color: red; */
     flex-flow: column;
     align-items: center;
     margin: 1rem;
@@ -34,7 +32,6 @@ html, body {
 }
 
 .footer {
-    /* background-color: brown; */
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
