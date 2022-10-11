@@ -15,7 +15,11 @@ cp ./dist/*/* ./
 
 git add .
 git commit -m 'deploy new version'
-# git push
+git push
+
+cat 
+sleep 5
 
 # return to main branch 
-# git checkout main
+git checkout main
+
