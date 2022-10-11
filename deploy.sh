@@ -17,7 +17,6 @@ git add .
 git commit -m 'deploy new version'
 git push
 
-cat 
 sleep 5
 
 # return to main branch 
