@@ -1,3 +1,14 @@
+# Make sure git working tree is clean before proceed,
+# Otherwise it will be commited on the gh-pages branch.
+while true; do
+    read -p "Make sure your git working tree is clean before proceed " yn
+    case $yn in
+        [Yy]* ) make install; break;;
+        [Nn]* ) exit;;
+        * ) echo "Please answer yes or no.";;
+    esac
+done
+
 # Get latest version on main
 git checkout main
 git pull
