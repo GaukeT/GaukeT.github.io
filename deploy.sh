@@ -1,16 +1,21 @@
+# Get latest version on main
+git checkout main
+git pull
 
-# deploy build to new branch
-ng deploy --base-href=/
+# Build production version
+npm install
+ng build
 
-# checkout branch
+# Checkout gh-pages
 git checkout gh-pages
 git pull
 
-# add cname file to branch
-echo 'www.gauket.nl' > CNAME
-git add CNAME
-git commit -m 'add CNAME'
-git push
+# Copy artifacts
+cp ./dist/*/* ./
+
+git add .
+git commit -m 'deploy new version'
+# git push
 
 # return to main branch 
-git checkout main
+# git checkout main
