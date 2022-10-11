@@ -15,6 +15,7 @@ export class ProjectsComponent {
     {name: "Sudoku solver", github: "sudoku-solver-js", demo: true},
     {name: "Sudoku solver (C#)", github: "SudokuSolver", demo: false},
     {name: "Nonogram", github: "nonogram-js", demo: true},
+    {name: "Qwixx", github: "qwixx", demo: true},
     {name: "Sorting visualization", github: "sorting-visualization", demo: true},
     {name: "Flocking simulation", github: "flocking-simulation", demo: true},
     {name: "Seven segment clock", github: "seven-segment-clock", demo: true},
