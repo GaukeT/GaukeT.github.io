@@ -1,9 +1,9 @@
 # Make sure git working tree is clean before proceed,
 # Otherwise it will be commited on the gh-pages branch.
 while true; do
-    read -p "Make sure your git working tree is clean before proceed " yn
+    read -p "Make sure your git working tree is clean before proceed [Y/n]" yn
     case $yn in
-        [Yy]* ) make install; break;;
+        [Yy]* ) break;;
         [Nn]* ) exit;;
         * ) echo "Please answer yes or no.";;
     esac
