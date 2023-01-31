@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class ProjectsComponent {
 
   projects: project[] = [
-    {name: "Advent Of Code", github: "adventofcode", demo: true},
+    {name: "Advent Of Code (2022) (js)", github: "advent-of-code-js", demo: true},
     {name: "Advent Of Code (Java)", github: "adventOfCodeJava", demo: false},
     {name: "Music", github: "music", demo: true},
     {name: "Tea Topics", github: "tea-topics", demo: true},
@@ -18,10 +18,12 @@ export class ProjectsComponent {
     {name: "Qwixx", github: "qwixx", demo: true},
     {name: "Sorting visualization", github: "sorting-visualization", demo: true},
     {name: "Flocking simulation", github: "flocking-simulation", demo: true},
-    {name: "Seven segment clock", github: "seven-segment-clock", demo: true},
+    // {name: "Seven segment clock", github: "seven-segment-clock", demo: true},
     {name: "Breathing exercise", github: "breathing-exercise", demo: true},
     {name: "Genetic algorithm (Java)", github: "GeneticAlgorithm", demo: false},
-    {name: "Traffic", github: "traffic", demo: true}
+    {name: "Breath first search", github: "graph-search-algorithms", demo: true},
+    {name: "AchievementBot (Kotlin)", github: "AchievementBot", demo: false}
+    // {name: "Traffic", github: "traffic", demo: true}
   ];
 }
 
