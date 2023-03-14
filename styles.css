@@ -2,6 +2,7 @@ body {
   display: grid;
   place-items: center;
   height: 100vh;
+  width: 100vw;
   background-color: #1A4341;
   margin: 0rem;
   overflow: hidden;
@@ -9,15 +10,128 @@ body {
   font-family: 'Space Mono', monospace;
   color: white;
 }
-  
+
+main {
+  display: grid;
+  place-items: center;
+  /* background-size: cover; */
+  background-color: #1A4341;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  z-index: 4;
+  transition: transform 500ms cubic-bezier(.13,.53,.38,.97);
+}
+
+body[data-nav="true"] > main {
+  transform: translateY(-50%);
+}
+
+nav {
+  height: 50vh;
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  z-index: 3;
+  overflow: hidden;
+}
+
+#nav-links {  
+  display: flex;
+  gap: clamp(1rem, 2vw, 2rem);
+  justify-content: space-around;
+  margin-top: clamp(2rem, 2vw, 3rem);
+  padding: 0rem clamp(1rem, 2vw, 2rem);
+  transform: translateY(70%) scale(0.9);
+  transition: transform 500ms cubic-bezier(.13,.53,.38,.97); 
+}
+
+body[data-nav="true"] > nav > #nav-links {
+  transform: translateY(0%) scale(1);
+}
+
+#nav-links > .nav-link {
+  text-decoration: none;
+}
+
+#nav-links > .nav-link > .nav-link-label {
+  color: white;
+  font-size: 1.25rem;
+  margin: 0rem;
+  text-transform: uppercase;
+}
+
+#nav-links > .nav-link > .nav-link-image {
+  width: max(20vw, 400px);
+  aspect-ratio: 1.8 / 1;
+  border-radius: 0.5rem;
+  margin-top: 0.75rem;
+  object-fit: cover;
+}
+
+#nav-toggle {
+  height: 3rem;
+  width: 3rem;
+  position: fixed;
+  z-index: 4;
+  left: 50%;
+  bottom: 3rem;
+  transform: translateX(-50%);
+  background-color: rgb(182, 142, 113);
+  border: none;
+  border-radius: 5rem;
+  outline: none;
+  box-shadow: 0rem 0rem 4rem rgba(0 0 0 / 35%);
+  cursor: pointer;
+  transition: transform, background-color;
+  transition-timing-function: ease;
+  transition-duration: 400ms;
+}
+
+#nav-toggle:hover {
+  transform: translateX(-50%) scale(1.04);
+}
+
+#nav-toggle:active {
+  transform: translateX(-50%) scale(0.96);
+}
+
+body[data-nav="true"] > #nav-toggle {
+  background-color: rgb(85, 130, 149);
+}
+
+body:not([data-nav="true"]) > #nav-toggle:hover > .open {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+#nav-toggle > i {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0.9);
+  color: rgb(246, 231, 224);
+  font-size: 1.75rem;
+  opacity: 0;
+  transition: transform, opacity;
+  transition-timing-function: ease;
+  transition-duration: 400ms;
+}
+
+body[data-nav="true"] > #nav-toggle > .close {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+
 h1 {
   font-size: clamp(3rem, 10vw, 10rem);
   padding: 0rem clamp(1rem, 2vw, 3rem);
   border-radius: clamp(0.4rem, 0.75vw, 1rem);
-
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: rgba(255, 255, 255, 0.90);
   color: #1A4341;
-  z-index: 3;
+  /* z-index: 4; */
 }
 
 @keyframes rotate {
@@ -52,13 +166,13 @@ h1 {
   height: 100%;
   width: 100%;
   position: absolute;
-  z-index: 2;
+  z-index: 3;
   backdrop-filter: blur(12vmax);
 }
 
-.links {
-  z-index: 3;
-}
+/* .links {
+  z-index: 4;
+} */
 
 a {
   text-decoration: none;

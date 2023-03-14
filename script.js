@@ -1,6 +1,10 @@
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 let interval = null;
 
+const toggleNav = () => {
+  document.body.dataset.nav = document.body.dataset.nav === "true" ? "false" : "true";
+}
+
 window.addEventListener('load', function () {
   init(document.getElementById("h1"));
 });
