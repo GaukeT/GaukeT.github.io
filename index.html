@@ -1,15 +1,61 @@
-<!DOCTYPE html><html lang="en"><head>
+<!doctype html>
+<html lang="en">
+  <head>
     <meta charset="utf-8">
-    <meta name="description" content="GaukeT | Gauke Teijema | Software Developer | Portfolio | Showcase | Personal website">
-    <meta name="theme-color" content="#1A4341">
+    <meta name="description" content="GaukeT | Gauke Teijema | Software Developer | Portfolio">
+    <meta name="theme-color" content="#1A4341"/>
     <title>GaukeT</title>
-    <base href="/">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <style>html,body{height:100%;background-color:#1a4341;margin:0;color:#fff;font-family:Roboto,Helvetica Neue,sans-serif}</style><link rel="stylesheet" href="styles.a0066b11ecec850f.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles.a0066b11ecec850f.css"></noscript></head>
+    <link rel='stylesheet' type='text/css' href='styles.css'>
+    <script src='script.js'></script>
+  </head>
   <body>
-    <app-root></app-root>
-  <script src="runtime.96a0bab2b6b2a80e.js" type="module"></script><script src="polyfills.ebb7f02faa84ff20.js" type="module"></script><script src="main.804ac3f6ed6c87d6.js" type="module"></script>
+    <div id="blob"></div>
+    <div id="blur"></div>
 
-</body></html>
+    <main>
+      <h1 id="h1" data-value="GAUKE TEIJEMA">GAUKE TEIJEMA</h1>
+      <!-- <p id="p1" data-value="Software Developer">Software Developer</p> -->
+
+      <div class="links">
+        <a rel="noopener" href="https://github.com/GaukeT" target="_blank" title="GitHub">
+          <i class="fa fa-github" aria-hidden="true"></i>
+        </a>
+        <a rel="noopener" href="https://nl.linkedin.com/in/gauketeijema" target="_blank" title="LinkedIn">
+          <i class="fa fa-linkedin" aria-hidden="true"></i>
+        </a>
+        <a rel="noopener" href="mailto:gauket.dev@gmail.com?subject=contact" target="_top" title="Mail">
+          <i class="fa fa-envelope"></i>
+        </a>
+      </div>
+    </main>
+    
+    <nav>
+      <div id="nav-links">
+        <a class="nav-link" href="#" onclick="toggleNav()">
+          <h2 class="nav-link-label rubik-font">Home</h2>
+          <img class="nav-link-image" src="https://images.unsplash.com/photo-1554549668-2a6c165741ca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" />
+        </a>
+        <a class="nav-link" href="#">
+          <h2 class="nav-link-label rubik-font">Work</h2>
+          <img class="nav-link-image" src="https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80" />
+        </a>
+        <a class="nav-link" href="#">
+          <h2 class="nav-link-label rubik-font">About</h2>
+          <img class="nav-link-image" src="https://images.unsplash.com/photo-1498598457418-36ef20772bb9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80" />
+        </a>
+        <a class="nav-link" href="#">
+          <h2 class="nav-link-label rubik-font">Contact</h2>
+          <img class="nav-link-image" src="https://images.unsplash.com/photo-1534536281715-e28d76689b4d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3870&q=80" />
+        </a>
+      </div>
+    </nav>
+
+    <button id="nav-toggle" type="button" onclick="toggleNav()">
+      <i class="open fa fa-bars"></i>
+      <i class="close fa fa-times"></i>
+    </button>
+  </body>
+</html>
