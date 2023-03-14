@@ -2,11 +2,21 @@ const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 let interval = null;
 
 window.addEventListener('load', function () {
-  init(document.getElementById("h1"), 
-    () => document.getElementById("p1").style.visibility = "visible")
+  init(document.getElementById("h1"));
 });
 
-function init(event, _callback) {
+function init(event) {
+  const blob = document.getElementById("blob");
+
+  window.onpointermove = event => { 
+    const { clientX, clientY } = event;
+    
+    blob.animate({
+      left: `${clientX}px`,
+      top: `${clientY}px`
+    }, { duration: 3000, fill: "forwards" });
+  }
+
   let iteration = 0;
   
   clearInterval(interval);
@@ -23,9 +33,8 @@ function init(event, _callback) {
       })
       .join("");
     
-    if(iteration >= event.dataset.value.length){ 
+    if(iteration >= event.dataset.value.length) { 
       clearInterval(interval);
-      _callback();
     }
     
     iteration += 1 / 4;
