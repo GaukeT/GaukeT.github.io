@@ -6,10 +6,12 @@ const toggleNav = () => {
 }
 
 window.addEventListener('load', function () {
-  init(document.getElementById("h1"));
+  loadingWord(document.getElementById("h1"));
+
+  document.getElementById("h1").onmouseover = event => loadingWord(event.target);
 });
 
-function init(event) {
+function loadingWord(event) {
   const blob = document.getElementById("blob");
 
   window.onpointermove = event => { 
