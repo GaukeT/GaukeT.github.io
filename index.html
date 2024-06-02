@@ -1,60 +1,92 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="description" content="GaukeT | Gauke Teijema | Software Developer | Portfolio">
-    <meta name="theme-color" content="#1A4341"/>
-    <title>GaukeT</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal website showcasing projects and professional interests.">
+    <meta name="keywords" content="personal branding, projects, professional, portfolio">
+    <title>Gauke Teijema</title>
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel='stylesheet' type='text/css' href='css/styles.css'>
-    <script src='script.js'></script>
-  </head>
-  <body>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <a href="#" class="nav-logo">GaukeT</a>
+                <div class="nav-menu-icon" id="navMenuIcon">&#9776;</div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
     <main>
-      <h1 id="h1" data-value="GAUKE TEIJEMA">GAUKE TEIJEMA</h1>
-      <!-- <p id="p1" data-value="Software Developer">Software Developer</p> -->
+        <section id="home">
+            <h1 id="h1" data-value="GAUKE TEIJEMA">GAUKE TEIJEMA</h1>
+            <p class="tagline">Transforming Ideas into High-Quality Code</p>
+        </section>
 
-      <div class="links">
-        <a rel="noopener" href="https://github.com/GaukeT" target="_blank" title="GitHub">
-          <i class="fa fa-github" aria-hidden="true"></i>
-        </a>
-        <a rel="noopener" href="https://nl.linkedin.com/in/gauketeijema" target="_blank" title="LinkedIn">
-          <i class="fa fa-linkedin" aria-hidden="true"></i>
-        </a>
-        <a rel="noopener" href="mailto:gauket.dev@gmail.com?subject=contact" target="_top" title="Mail">
-          <i class="fa fa-envelope"></i>
-        </a>
-      </div>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Welcome to my personal website! I'm Gauke Teijema, a passionate software developer with a diverse professional background and a deep commitment to creating high-quality, efficient code.</p>
+            <p>My journey into software development began in August 2016. Initially, I worked in finance, but my interest in technology was sparked when I started thinking about automating tasks and improving the systems I worked with. The excitement and energy I felt while working on these improvements made me realize that software development was my true calling. This epiphany set me on the path to becoming a software developer, a decision that has been incredibly fulfilling.</p>
+            <p>I take great pride in writing clean, readable code that stands the test of time. I believe in simplicity and strive to avoid overcomplicating problems, ensuring that both my colleagues and I can easily understand and maintain the codebase in the future. My motivation comes from the tangible value my work creates, making life easier for others through the software I develop.</p>
+            <p>Outside of my professional life, I have a variety of interests that keep me balanced and inspired. I enjoy running, playing the guitar, and working in my garden, where I grow vegetables and care for my indoor plants. Recently, I've also taken up boxing classes, which have been a fantastic new challenge.</p>
+            <p>Thank you for visiting my site. Feel free to explore my portfolio and blog, where I share insights and updates on my projects and interests. I'm always eager to connect with like-minded individuals and explore new opportunities. Let's connect and create something amazing together!</p>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+<div class="projects-grid">
+    <div class="project">
+        <h3>Project Title 1</h3>
+        <div class="placeholder-image" style="background-image: url('https://images.unsplash.com/photo-1554549668-2a6c165741ca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80');"></div>
+        <p>Description of the project. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque auctor tincidunt sapien, at luctus elit.</p>
+    </div>
+    <div class="project">
+        <h3>Project Title 2</h3>
+        <div class="placeholder-image" style="background-image: url('https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80');"></div>
+        <p>Description of the project. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque auctor tincidunt sapien, at luctus elit.</p>
+    </div>
+    <div class="project">
+        <h3>Project Title 3</h3>
+        <div class="placeholder-image" style="background-image: url('https://images.unsplash.com/photo-1498598457418-36ef20772bb9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80');"></div>
+        <p>Description of the project. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque auctor tincidunt sapien, at luctus elit.</p>
+    </div>
+    <div class="project">
+        <h3>Project Title 4</h3>
+        <div class="placeholder-image" style="background-image: url('https://images.unsplash.com/photo-1534536281715-e28d76689b4d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80');"></div>
+        <p>Description of the project. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque auctor tincidunt sapien, at luctus elit.</p>
+    </div>
+</div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Connect with me on:</p>
+            <div class="links">
+                <a rel="noopener" href="https://github.com/GaukeT" target="_blank" title="GitHub">
+                    <i class="fa fa-github" aria-hidden="true"></i>
+                </a>
+                <a rel="noopener" href="https://nl.linkedin.com/in/gauketeijema" target="_blank" title="LinkedIn">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+                <a rel="noopener" href="mailto:gauket.dev@gmail.com?subject=contact" target="_top" title="Mail">
+                    <i class="fa fa-envelope"></i>
+                </a>
+            </div>
+        </section>
     </main>
-    
-    <nav>
-      <div id="blob"></div>
-      <div id="blur"></div>
-      <div id="nav-links">
-        <a class="nav-link" href="#" onclick="toggleNav()">
-          <h2 class="nav-link-label rubik-font">Home</h2>
-          <img class="nav-link-image" src="https://images.unsplash.com/photo-1554549668-2a6c165741ca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" />
-        </a>
-        <a class="nav-link" href="#">
-          <h2 class="nav-link-label rubik-font">Work</h2>
-          <img class="nav-link-image" src="https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80" />
-        </a>
-        <a class="nav-link" href="#">
-          <h2 class="nav-link-label rubik-font">About</h2>
-          <img class="nav-link-image" src="https://images.unsplash.com/photo-1498598457418-36ef20772bb9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80" />
-        </a>
-        <a class="nav-link" href="#">
-          <h2 class="nav-link-label rubik-font">Contact</h2>
-          <img class="nav-link-image" src="https://images.unsplash.com/photo-1534536281715-e28d76689b4d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3870&q=80" />
-        </a>
-      </div>
-    </nav>
 
-    <button id="nav-toggle" type="button" onclick="toggleNav()">
-      <i class="open fa fa-bars"></i>
-      <i class="close fa fa-times"></i>
-    </button>
-  </body>
+    <footer>
+        <p>&copy; 2024 Gauke Teijema. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
 </html>
