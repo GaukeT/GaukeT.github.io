@@ -13,20 +13,20 @@
     <header>
         <nav>
             <div class="nav-container">
-                <a href="#" class="nav-logo">GaukeT</a>
-                <div class="nav-menu-icon" id="navMenuIcon">&#9776;</div>
-                <ul class="nav-menu" id="navMenu">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                <a href="#" class="nav-logo" aria-label="Home">GaukeT</a>
+                <div class="nav-menu-icon" id="navMenuIcon" aria-label="Menu">&#9776;</div>
+                <ul class="nav-menu" id="navMenu" role="menu">
+                    <li><a href="#home" aria-label="Home">Home</a></li>
+                    <li><a href="#about" aria-label="About">About</a></li>
+                    <li><a href="#projects" aria-label="Projects">Projects</a></li>
+                    <li><a href="#contact" aria-label="Contact">Contact</a></li>
                 </ul>
             </div>
         </nav>
     </header>
 
     <main>
-        <section id="home">
+        <section id="home" class="full-height">
             <h1 id="h1" data-value="GAUKE TEIJEMA">GAUKE TEIJEMA</h1>
             <p class="tagline">Explore | Connect | Create</p>
         </section>
@@ -34,41 +34,56 @@
         <section id="about">
             <h2>About Me</h2>
             <p>Welcome to my personal website! I'm Gauke Teijema, a passionate software developer with a diverse professional background and a deep commitment to creating high-quality, efficient code.</p>
-            <p>My journey into software development began in August 2016. Initially, I worked in finance, but my interest in technology was sparked when I started thinking about automating tasks and improving the systems I worked with. The excitement and energy I felt while working on these improvements made me realize that software development was my true calling. This epiphany set me on the path to becoming a software developer, a decision that has been incredibly fulfilling.</p>
+            <p>My journey into software development began in August 2016. Initially, I worked in finance, but my interest in technology was sparked when I started thinking about automating tasks and improving the systems I worked with. The excitement and energy I felt while working on these improvements made me realize that software development was my true calling. This set me on the path to becoming a software developer, a decision that has been incredibly fulfilling.</p>
             <p>I take great pride in writing clean, readable code that stands the test of time. I believe in simplicity and strive to avoid overcomplicating problems, ensuring that both my colleagues and I can easily understand and maintain the codebase in the future. My motivation comes from the tangible value my work creates, making life easier for others through the software I develop.</p>
-            <p>Outside of my professional life, I have a variety of interests that keep me balanced and inspired. I enjoy running, playing the guitar, and working in my garden, where I grow vegetables and care for my indoor plants. Recently, I've also taken up boxing classes, which have been a fantastic new challenge.</p>
+            <p>Outside of my professional life, I have a variety of interests that keep me balanced and inspired. I enjoy running, playing the guitar, working in my garden where I grow vegetables and taking care for my indoor plants. Recently, I've also taken up boxing classes, which have been a fantastic new challenge.</p>
             <p>Thank you for visiting my site. Feel free to explore my portfolio, where I share insights and updates on my projects and interests. I'm always eager to connect with like-minded individuals and explore new opportunities. Let's connect and create something amazing together!</p>
         </section>
 
         <section id="projects">
             <h2>Projects</h2>
-<div class="projects-grid">
-    <div class="project">
-        <h3>Project Title 1</h3>
-        <div class="placeholder-image" style="background-image: url('https://images.unsplash.com/photo-1554549668-2a6c165741ca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80');"></div>
-        <p>Description of the project. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque auctor tincidunt sapien, at luctus elit.</p>
-    </div>
-    <div class="project">
-        <h3>Project Title 2</h3>
-        <div class="placeholder-image" style="background-image: url('https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80');"></div>
-        <p>Description of the project. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque auctor tincidunt sapien, at luctus elit.</p>
-    </div>
-    <div class="project">
-        <h3>Project Title 3</h3>
-        <div class="placeholder-image" style="background-image: url('https://images.unsplash.com/photo-1498598457418-36ef20772bb9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80');"></div>
-        <p>Description of the project. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque auctor tincidunt sapien, at luctus elit.</p>
-    </div>
-    <div class="project">
-        <h3>Project Title 4</h3>
-        <div class="placeholder-image" style="background-image: url('https://images.unsplash.com/photo-1534536281715-e28d76689b4d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80');"></div>
-        <p>Description of the project. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque auctor tincidunt sapien, at luctus elit.</p>
-    </div>
-</div>
+            <div class="projects-grid">
+                <div class="project">
+                    <h3>Project Title 1</h3>
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="https://images.unsplash.com/photo-1554549668-2a6c165741ca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80">
+                        <source media="(min-width: 769px)" srcset="https://images.unsplash.com/photo-1554549668-2a6c165741ca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80">
+                        <img src="https://images.unsplash.com/photo-1554549668-2a6c165741ca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80" alt="Project 1" class="placeholder-image">
+                    </picture>
+                    <p>Description of the project. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque auctor tincidunt sapien, at luctus elit.</p>
+                </div>
+                <div class="project">
+                    <h3>Project Title 2</h3>
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80">
+                        <source media="(min-width: 769px)" srcset="https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80">
+                        <img src="https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80" alt="Project 2" class="placeholder-image">
+                    </picture>
+                    <p>Description of the project. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque auctor tincidunt sapien, at luctus elit.</p>
+                </div>
+                <div class="project">
+                    <h3>Project Title 3</h3>
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="https://images.unsplash.com/photo-1498598457418-36ef20772bb9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80">
+                        <source media="(min-width: 769px)" srcset="https://images.unsplash.com/photo-1498598457418-36ef20772bb9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80">
+                        <img src="https://images.unsplash.com/photo-1498598457418-36ef20772bb9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80" alt="Project 3" class="placeholder-image">
+                    </picture>
+                    <p>Description of the project. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque auctor tincidunt sapien, at luctus elit.</p>
+                </div>
+                <div class="project">
+                    <h3>Project Title 4</h3>
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="https://images.unsplash.com/photo-1534536281715-e28d76689b4d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80">
+                        <source media="(min-width: 769px)" srcset="https://images.unsplash.com/photo-1534536281715-e28d76689b4d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80">
+                        <img src="https://images.unsplash.com/photo-1534536281715-e28d76689b4d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80" alt="Project 4" class="placeholder-image">
+                    </picture>
+                    <p>Description of the project. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque auctor tincidunt sapien, at luctus elit.</p>
+                </div>
+            </div>
         </section>
 
         <section id="contact">
             <h2>Contact</h2>
-            <p>Connect with me on:</p>
             <div class="links">
                 <a rel="noopener" href="https://github.com/GaukeT" target="_blank" title="GitHub">
                     <i class="fa fa-github" aria-hidden="true"></i>
