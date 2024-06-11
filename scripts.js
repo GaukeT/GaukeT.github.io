@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         return event.dataset.value[index];
                     }
                 
-                    return letters[Math.floor(Math.random() * 26)];
+                    return letters[Math.floor(Math.random() * letters.length)];
                 })
                 .join("");
             
